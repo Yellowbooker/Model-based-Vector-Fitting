@@ -1,5 +1,5 @@
 # Modal-based-Vector-Fitting
-MVF for Circuit Model Extraction of Microwave Filter 
+MVF for Circuit Model Extraction of Microwave Filter. 
 Include three steps: 
 1. Phase Embedding
 2. Coupling Matrix Extraction Based on Y-Parameters
