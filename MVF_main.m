@@ -160,7 +160,7 @@ for index=1:X
 %     display(ak);
 %     display(cp);
 	err_ctl(index) = sum(abs(ak - tmp_ak));
-	if err_ctl(index) < err_ak_limit & max(cp_plot(index)) < err_cp_limit
+	if (err_ctl(index) < err_ak_limit) && (max(cp_plot(:,index)) < err_cp_limit)
 		break
 	end
 	tmp_ak = ak;
