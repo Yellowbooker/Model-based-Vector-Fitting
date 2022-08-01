@@ -94,7 +94,7 @@ for index = 1:X
     cp_plot(:,index)=10*log10(abs(cp));
     ak = eig(A-b*cp.');
     err_ctl(index) = sum(abs(ak - tmp_ak));
-	if err_ctl(index) < err_ak_limit & max(cp_plot(index)) < err_cp_limit
+	if (err_ctl(index) < err_ak_limit) && (max(cp_plot(:,index)) < err_cp_limit)
 		break
 	end
 	tmp_ak = ak;
@@ -152,7 +152,7 @@ for index = 1:X
     cp_plot(:,index)=10*log10(abs(cp));
     ak = eig(A-b*cp.');
     err_ctl(index) = sum(abs(ak - tmp_ak));
-	if err_ctl(index) < err_ak_limit & max(cp_plot(index)) < err_cp_limit
+	if (err_ctl(index) < err_ak_limit) && (max(cp_plot(:,index)) < err_cp_limit)
 		break
 	end
 	tmp_ak = ak;
