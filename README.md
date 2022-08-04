@@ -1,4 +1,5 @@
 # Modal-based-Vector-Fitting
+This is the old version, plz see MVF_Version2
 MVF for Circuit Model Extraction of Microwave Filter (MATLAB R2019b Code).  
 ! Please run MVF_main and make sure every files are in the same folder.  
 ------------------------------------------------------  
